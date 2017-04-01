@@ -5,7 +5,7 @@ void main(){
 	int minValueIndex = 0;
 	int i, j, temp = 0;
 
-	for(i=0;i<5;i++){
+	for(i=0;i<4;i++){
 		for(j=i+1;j<5;j++){
 			if(data[j] < data[minValueIndex]){
 				minValueIndex = j;
