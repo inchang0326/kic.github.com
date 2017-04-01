@@ -4,20 +4,16 @@ void swap(int *number, int *number2);
 
 void main(){
 
-	int i, j, maxIndex;
+	int i, j;
 	int arr[10] = {9, 4, 3, 10, 5, 8, 7, 6, 2, 1};
 
-	for(i=0;i<10;i++){
+	for(i=0;i<9;i++){
 		
-		maxIndex = 0;
 		j = 0;
-
-		for(j=0;j<10;j++){
-			if(arr[j] < arr[maxIndex]){
-				swap(&arr[j], &arr[maxIndex]);
-				maxIndex++;
+		for(j=0;j<9-i;j++){
+			if(arr[j] > arr[j+1]){
+				swap(&arr[j], &arr[j+1]);
 			}
-			else maxIndex = j;
 		}
 	}
 
